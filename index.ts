@@ -55,6 +55,16 @@ const validarDisco = (datos: any): string | null =>
         return "ERROR!: Formato esperado: {filmName: string, rotationType: string(CAV o CLV), region: string, lenghtMinutes:number, videoFormat: string (NTSC o PAL)}";
     }
 
+    if(!(rotationType==="CAV" || rotationType  === "CLV"))
+    {
+        return "ERROR!: Rotation type sólo puede ser CAV o CLV, comprueba que esté bien escrito";
+    }
+
+    if(!(videoFormat==="NTSC" || videoFormat  === "PAL"))
+    {
+        return "ERROR!: Video format type sólo puede ser NTSC o PAL, comprueba que esté bien escrito";
+    }
+
     return null;
 };
 
