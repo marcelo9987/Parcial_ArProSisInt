@@ -102,8 +102,8 @@ const gestorDeErrores = (err: any, req: Request, res: Response, next: NextFuncti
 
 const testApi = (async () =>
 {
-    await new Promise(resolve => setTimeout(resolve, 2000)); // damos 2 segundos de margen para que el servidor inicie
-    console.log("Han pasado 2 segundos desde que el servidor se inició");
+    await new Promise(resolve => setTimeout(resolve, 1000)); // damos 1 segundo1 de margen para que el servidor inicie
+    console.log("Ha pasado 1 segundo desde que el servidor se inició");
 
 
         // 1-2. Obtener la lista de discos (debería devolver los dos discos iniciales)
